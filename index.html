@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>MFruits - Proizvodi od voća</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: url('path-to-your-fruit-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: rgba(191, 255, 193, 0.9);
+            color: #fff;
+            padding: 10px 0; 
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 400px; 
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #b30000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0a8110;
+        }
+
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4caf50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .proizvod {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-divider {
+            border-top: 2px solid #4caf50;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #9e0000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form div {
+            margin-bottom: 10px;
+        }
+
+        input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .recenzija {
+            background: rgba(245, 245, 245, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .recenzija-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .recenzija-header h3 {
+            margin: 0;
+        }
+
+        .zvezde {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="mfruits.png" alt="MFruits Logo" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="#o-nama">O nama</a></li>
+                    <li><a href="#proizvodi">Proizvodi</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
+                    <li><a href="#usluge">Usluge</a></li>
+                    <li><a href="#recenzije">Recenzije</a></li>
+                    <li><a href="#faq">Česta pitanja</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="o-nama">
+            <h2>O nama</h2>
+            <p>MFruits je fabrika posvećena preradi voća najvišeg kvaliteta. Naša strast prema voću nas pokreće da kreiramo proizvode koji su zdravi i ukusni. Sa tradicijom dugom više od 20 godina, uveravamo vas da su naši proizvodi rezultat pažljive selekcije i inovativne tehnologije.</p>
+            <h3>Naša misija</h3>
+            <p>Naša misija je da pružimo potrošačima prirodne i zdrave proizvode, uz poštovanje prema prirodi i lokalnim zajednicama.</p>
+        </section>
+        
+        <div class="section-divider"></div>
+
+        <section id="proizvodi">
+            <h2>Naši proizvodi</h2>
+            <div class="proizvod">
+                <h3>Sokovi</h3>
+                <p>Prirodni sokovi bez konzervansa, proizvedeni od svežeg voća. Dostupni su u različitim ukusima, uključujući narandžu, jabuku i krušku.</p>
+            </div>
+            <div class="proizvod">
+                <h3>Džemovi</h3>
+                <p>Domaći džemovi od svežeg voća, savršeni za doručak ili užinu. Pripremljeni su bez dodatnih šećera i veštačkih aroma.</p>
+            </div>
+            <div class="proizvod">
+                <h3>Konzervisano voće</h3>
+                <p>Savršeno voće, spremno za svaku priliku. Idealno za kolače, salate ili kao samostalan užitak.</p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="usluge">
+            <h2>Usluge</h2>
+            <p>Pored proizvodnje, nudimo i različite usluge kao što su:</p>
+            <ul>
+                <li>Personalizovana pakovanja za specijalne prilike.</li>
+                <li>Radionice o zdravoj ishrani i preradi voća.</li>
+                <li>Usluge dostave na kućnu adresu.</li>
+            </ul>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="galerija">
+            <h2>Galerija</h2>
+            <p>Pogledajte neke od naših proizvoda i procesa proizvodnje:</p>
+            <div class="gallery">
+                <img src="bio-organska-pica-sokovi-calix (1).jpg" alt="Sokovi" />
+                <img src="dzem.jpg" alt="Džemovi" />
+                <img src="1711356358-shutterstock_1022290516-750x500.jpg" alt="Konzervisano voće" />
+                <img src="novi-sok.jpg" alt="Novi sok" />
+                <img src="salata.jpg" alt="Voćna salata" />
+                <img src="pakovanje.jpg" alt="Pakovanje proizvoda" />
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="recenzije">
+            <h2>Recenzije</h2>
+            <div class="recenzija">
+                <div class="recenzija-header">
+                    <h3>Jelena T.</h3>
+                    <div class="zvezde">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <p>"Savršeni džemovi, a sokovi su mi omiljeni."</p>
+            </div>
+            <div class="recenzija">
+                <div class="recenzija-header">
+                    <h3>Marko S.</h3>
+                    <div class="zvezde">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <p>"Sviđa mi se kvalitet proizvoda, preporučujem svima!"</p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="faq">
+            <h2>Česta pitanja</h2>
+            <h3>Kako mogu naručiti proizvode?</h3>
+            <p>Naručivanje je jednostavno! Možete nas kontaktirati putem e-maila ili preko naših društvenih mreža.</p>
+            <h3>Da li su vaši proizvodi organski?</h3>
+            <p>Da, naši proizvodi su izrađeni od 100% prirodnih sastojaka, bez dodataka i konzervansa.</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="kontakt">
+            <h2>Kontaktirajte nas</h2>
+            <p>Za više informacija, pišite nam na: <a href="mailto:info@mfabrika.com">info@mfabrika.com</a>.</p>
+            <p>Možete nas kontaktirati i putem društvenih mreža:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="email">Vaš mejl:</label>
+                    <input type="email" id="email" name="email" required placeholder="Unesite vaš mejl">
+                </div>
+                <div>
+                    <label for="pitanje">Vaše pitanje:</label>
+                    <textarea id="pitanje" name="pitanje" required placeholder="Unesite vaše pitanje"></textarea>
+                </div>
+                <button type="submit">Pošaljite</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MFruits. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>
